@@ -27,7 +27,7 @@ public class HelloWorldController extends BaseController {
 	@RequestMapping(value={"/index","/hello"})
     public ModelAndView index() throws SQLException{
 		
-		throw new SQLException("数据库异常。");
+		throw new SQLException("数据库异常。");	//主动抛异常
 		
 		/*ModelAndView modelAndView = new ModelAndView();  
 		modelAndView.addObject("message", "Hello World!");  

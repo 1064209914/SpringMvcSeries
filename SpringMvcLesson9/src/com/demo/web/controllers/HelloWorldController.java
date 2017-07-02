@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.demo.web.auth.AuthPassport;
 
 @Controller
-@RequestMapping(value = "/helloworld")
+//@RequestMapping(value = "/helloworld")
 public class HelloWorldController {
 	
 	@AuthPassport

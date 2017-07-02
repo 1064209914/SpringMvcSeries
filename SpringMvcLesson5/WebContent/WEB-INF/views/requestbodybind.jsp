@@ -19,6 +19,9 @@
 		<input type="button" id="submit" value="Submit" />
 	</form:form> 
 	
+	<!-- <input id="name" type="text" />
+	<input id="pass" type="text" /> -->
+	
 	<script type="text/javascript">
 		$(function() { 
 			$("#submit").click(function() {   
@@ -30,7 +33,10 @@
 			        processData : false,  
 			        dataType : 'json',  
 			        data : postdata,  
-			        success : function(data) {  
+			        success : function(data) {
+				        /* console.log("object: %o",data); 
+				        $("#name").val(data.username);
+				        $("#pass").val(data.password); */
 			            alert('username : '+data.username+'\npassword : '+data.password);  
 			        },  
 			        error : function() {  
