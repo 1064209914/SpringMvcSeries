@@ -33,7 +33,7 @@ public class DataBindController {
 		
 		//如果不用注解自动绑定，我们还可以像下面一样手动获取数据
 		String urlParam1 = ServletRequestUtils.getStringParameter(request, "urlParam", null);
-		String formParam1 = ServletRequestUtils.getStringParameter(request, "formParam", null);
+		String formParam1 = ServletRequestUtils.getStringParameter(request, "formParam", null);	//第三个参数，为默认值，但是实现有缺陷！dudongbin 2017-0702
         MultipartFile formFile1 = ((MultipartHttpServletRequest) request).getFile("formFile"); 
 		
 		ModelAndView modelAndView = new ModelAndView();  
